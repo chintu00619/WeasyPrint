@@ -120,6 +120,7 @@ class HTML:
         self.wrapper_element = cssselect2.ElementWrapper.from_html_root(
             result, content_language=None)
         self.etree_element = self.wrapper_element.etree_element
+        print('Modified WeasyPrint Called.')
 
     def _ua_stylesheets(self):
         return [HTML5_UA_STYLESHEET]
